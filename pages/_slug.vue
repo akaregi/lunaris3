@@ -1,9 +1,9 @@
 <template>
-  <main>
+  <div class="page">
     <h1 v-html="toWBRHTML(page.title)" />
     <h2>{{ page.published }}</h2>
     <nuxt-content :document="page" />
-  </main>
+  </div>
 </template>
 
 <style scoped>
