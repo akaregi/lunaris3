@@ -31,6 +31,12 @@ export default {
         .replace('/.', '/.<wbr/>')
         .replace(/=/g, '=<wbr/>')
     }
+  },
+
+  head () {
+    return {
+      title: `${this.page.title} - fedyya LUNARIS`
+    }
   }
 }
 </script>

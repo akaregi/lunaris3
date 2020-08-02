@@ -31,6 +31,12 @@ export default {
       .fetch()
 
     return { pages }
+  },
+
+  head () {
+    return {
+      title: 'Pages - fedyya LUNARIS'
+    }
   }
 }
 </script>
