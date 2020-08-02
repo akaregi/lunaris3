@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <h1>fedyya LUNARIS</h1>
+    <h1>{{ index.title }}</h1>
     <nuxt-link to="pages">一覧を見る</nuxt-link>
     <nuxt-content :document="index" />
   </div>
