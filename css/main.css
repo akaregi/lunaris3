@@ -20,8 +20,11 @@ body {
 }
 
 main {
+  min-width: 30%;
   max-width: 512px;
+
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 a, a:visited {
