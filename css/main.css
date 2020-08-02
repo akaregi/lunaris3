@@ -7,7 +7,7 @@ html {
 
 body {
   font-size: 20px;
-  font-family: "Arial Nova", Helvetica, Arial, sans-serif;
+  font-family: 'Arial Nova', Arial, Helvetica, sans-serif;
   line-height: 1.47;
 
   background: var(--foreground);
@@ -25,6 +25,7 @@ main {
 
 a, a:visited {
   color: var(--link);
+  text-decoration: none;
 }
 
 hr {
