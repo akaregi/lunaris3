@@ -11,6 +11,8 @@ body {
   font-family: 'Arial Nova', Arial, Helvetica, sans-serif;
   line-height: 1.47;
 
+  text-align: justify;
+
   background: var(--foreground);
 }
 
