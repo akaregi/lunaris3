@@ -18,8 +18,12 @@ h2 {
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
-    const page = await $content(params.slug).fetch()
+  async asyncData ({ $content, params, error }) {
+    const page = await $content(params.slug)
+      .fetch()
+      .catch(e => {
+        error({ statusCode: 404, message: "404 Not Found" })
+      })
 
     return { page }
   },

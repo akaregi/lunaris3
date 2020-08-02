@@ -35,6 +35,8 @@ export default {
   modules: ['@nuxt/content'],
 
   generate: {
+    fallback: true,
+
     async routes() {
       const { $content } = require('@nuxt/content')
       const files = await $content().only(['path']).fetch()
