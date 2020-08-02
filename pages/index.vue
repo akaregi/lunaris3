@@ -1,40 +1,16 @@
 <template>
-  <main>
+  <div class="index">
     <h1>fedyya LUNARIS</h1>
-    <section class="card" v-for="page in pages" :key="page.title">
-      <p class="subtitle">{{ page.published }}</p>
-      <nuxt-link class="title" :to="page.path">{{ page.title }}</nuxt-link>
-    </section>
-  </main>
+    <nuxt-link to="pages">一覧を見る</nuxt-link>
+    <nuxt-content :document="index" />
+  </div>
 </template>
-
-<style scoped>
-.card {
-  margin-bottom: 1rem;
-}
-
-.card p {
-  margin: 0;
-}
-
-.card a {
-  text-decoration: none;
-}
-
-.card .title {
-  font-size: 1.5rem;
-}
-</style>
 
 <script>
 export default {
   async asyncData ({ $content }) {
-    const pages = await $content()
-      .only(['title', 'published'])
-      .sortBy('title', 'asc')
-      .fetch()
-
-    return { pages }
+    const index = await $content('docs/index').fetch()
+    return { index }
   }
 }
 </script>
