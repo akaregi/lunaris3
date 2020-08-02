@@ -20,6 +20,10 @@
 .card .title {
   font-size: 1.5rem;
 }
+
+.card .subtitle {
+  color: var(--accent2);
+}
 </style>
 
 <script>

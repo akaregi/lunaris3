@@ -3,6 +3,7 @@ html {
   --background: hsl(0, 0%, 21%);
   --foreground: hsl(0, 0%, 97%);
   --accent: hsl(0, 0%, 90%);
+  --accent2: hsl(0, 0%, 76%);
 }
 
 body {
