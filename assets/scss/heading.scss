@@ -4,7 +4,7 @@ h1, h2 {
 }
 
 $size: 1rem;
-$ratio: 1.1;
+$ratio: 1.2;
 
 @for $exp from 1 through 6 {
     $header: 7 - $exp;
