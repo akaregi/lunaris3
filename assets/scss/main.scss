@@ -1,21 +1,4 @@
 @use 'variables';
 @use 'heading';
 @use 'element';
-
-body {
-  font-size: 20px;
-  font-family: 'Arial Nova', Arial, Helvetica, sans-serif;
-  line-height: 1.47;
-
-  text-align: justify;
-
-  background: var(--foreground);
-}
-
-main {
-  min-width: 30%;
-  max-width: 512px;
-
-  margin: 0 auto;
-  padding: 1rem;
-}
+@use 'layout';
