@@ -16,4 +16,8 @@ hr {
 a, a:visited {
   color: var(--link);
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

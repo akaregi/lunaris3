@@ -1,7 +1,8 @@
 body {
   font-size: 20px;
-  font-family: 'Arial Nova', Arial, Helvetica, sans-serif;
-  line-height: 1.47;
+  font-family: var(--font-serif);
+  font-feature-settings: "palt";
+  line-height: 1.46;
 
   text-align: justify;
 
@@ -9,7 +10,7 @@ body {
 }
 
 main {
-  min-width: 30%;
+  min-width: 40%;
   max-width: 512px;
 
   margin: 0 auto;
