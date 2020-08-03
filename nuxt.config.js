@@ -28,7 +28,7 @@ export default {
     ]
   },
 
-  css: ['~/css/main.css'],
+  css: ['ress', { src: '~/assets/scss/main.scss', lang: 'scss' }],
 
   components: true,
 

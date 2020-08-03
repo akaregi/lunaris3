@@ -9,10 +9,12 @@
 <style scoped>
 h1 {
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 h2 {
   margin-top: 0;
+  padding-top: 0;
   color: var(--accent2);
 }
 </style>

@@ -1,0 +1,14 @@
+a, a:visited {
+  color: var(--link);
+  text-decoration: none;
+}
+
+hr {
+    margin: 4rem 0;
+    border: 0;
+    border-top: 3px solid var(--accent);
+}
+
+p {
+  margin: 1rem 0;
+}
