@@ -1,6 +1,7 @@
 <template>
   <div class="pages">
     <h1>Pages</h1>
+    <p><nuxt-link to="/">（最初の画面に戻る）</nuxt-link></p>
     <section class="card" v-for="page in pages" :key="page.title">
       <p class="subtitle">{{ page.published }}</p>
       <nuxt-link :to="page.path" class="title">{{ page.title }}</nuxt-link>
