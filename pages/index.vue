@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <h1>{{ index.title }}</h1>
-    <nuxt-link to="pages">一覧を見る</nuxt-link>
+    <p><nuxt-link to="pages">一覧を見る</nuxt-link></p>
     <nuxt-content :document="index" />
   </div>
 </template>
