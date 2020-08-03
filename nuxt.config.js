@@ -28,7 +28,7 @@ export default {
     ]
   },
 
-  css: ['ress', { src: '~/assets/scss/main.scss', lang: 'scss' }],
+  css: ['normalize.css', { src: '~/assets/scss/main.scss', lang: 'scss' }],
 
   components: true,
 
