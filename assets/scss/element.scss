@@ -1,6 +1,10 @@
-a, a:visited {
-  color: var(--link);
-  text-decoration: none;
+::selection {
+  background: var(--background);
+  color: #fff;
+}
+
+p {
+  margin: 1rem 0;
 }
 
 hr {
@@ -9,6 +13,7 @@ hr {
     border-top: 3px solid var(--accent);
 }
 
-p {
-  margin: 1rem 0;
+a, a:visited {
+  color: var(--link);
+  text-decoration: none;
 }

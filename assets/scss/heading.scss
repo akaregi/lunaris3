@@ -4,4 +4,8 @@ h1, h2 {
 
   margin: 1rem 0;
   padding: .3rem 1rem;
+
+  &::selection {
+    color: var(--accent2);
+  }
 }
