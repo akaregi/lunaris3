@@ -1,7 +1,6 @@
+import _content from '@nuxt/content'
 
 export default {
-  mode: 'universal',
-
   target: 'static',
 
   head: {
@@ -32,7 +31,7 @@ export default {
 
   components: true,
 
-  modules: ['@nuxt/content'],
+  modules: ['@nuxt/content', '@nuxtjs/sitemap'],
 
   generate: {
     fallback: true,
@@ -41,6 +40,25 @@ export default {
   content: {
     markdown: {
       remarkPlugins: ['remark-breaks']
+    }
+  },
+
+  sitemap: {
+    hostname: 'https://lunaris.fedyya.net',
+    async routes () {
+      const $content = _content.$content
+
+      const contents = await $content()
+        .only(['title', 'path'])
+        .fetch()
+
+      return contents.map(content => {
+        return {
+          url: content.path,
+          changefreq: 'monthly',
+          priority: 1
+        }
+      })
     }
   }
 }
