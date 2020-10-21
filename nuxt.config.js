@@ -27,7 +27,7 @@ export default {
     ]
   },
 
-  css: ['normalize.css', { src: '~/assets/scss/main.scss', lang: 'scss' }],
+  css: ['~/assets/tailwind.css'],
 
   components: true,
 
@@ -59,6 +59,18 @@ export default {
           priority: 1
         }
       })
+    }
+  },
+
+  build: {
+    postcss: {
+      plugins: {
+        'tailwindcss': {}
+      },
+
+      preset: {
+        stage: 0
+      }
     }
   }
 }
