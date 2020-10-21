@@ -23,11 +23,11 @@ export default {
       { hid: 'twitter:creator', name: 'twitter:creator', content: '@akgmoegi' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
 
-  css: ['normalize.css', { src: '~/assets/scss/main.scss', lang: 'scss' }],
+  css: ['~/assets/tailwind.css'],
 
   components: true,
 
@@ -59,6 +59,18 @@ export default {
           priority: 1
         }
       })
+    }
+  },
+
+  build: {
+    postcss: {
+      plugins: {
+        'tailwindcss': {}
+      },
+
+      preset: {
+        stage: 0
+      }
     }
   }
 }

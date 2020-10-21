@@ -2,21 +2,29 @@
   <main>
     <nuxt />
 
-    <hr>
-
-    <footer>
-      <p>(C) 2020 AKANE AKAGI.</p>
-      <p>この作品は<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>で提供されます。</p>
-    </footer>
+    <Footer />
   </main>
 </template>
 
-<style scoped>
-p {
-  margin: 0;
-}
+<script>
+import Footer from '~/components/Footer.vue'
 
-footer {
-  margin: 4rem 0;
+export default {
+  components: {
+    Footer
+  }
+}
+</script>
+
+<style lang="postcss">
+body {
+  @apply
+    text-xl font-sans text-gray-800
+    antialiased subpixel-antialiased
+    leading-normal;
+  @apply max-w-screen-sm mr-auto ml-auto;
+  @apply bg-gray-100;
+
+  @apply my-16 px-8;
 }
 </style>
