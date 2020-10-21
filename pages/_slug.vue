@@ -1,23 +1,11 @@
 <template>
-  <div class="page">
-    <h1 v-html="toWBRHTML(page.title)" />
-    <h2>{{ page.published }}</h2>
+  <article class="content prose">
+    <h1 class="title" v-html="toWBRHTML(page.title)" />
+    <h2 class="date">{{ page.published }}</h2>
+
     <nuxt-content :document="page" />
-  </div>
+  </article>
 </template>
-
-<style scoped>
-h1 {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-h2 {
-  margin-top: 0;
-  padding-top: 0;
-  color: var(--accent2);
-}
-</style>
 
 <script>
 export default {
@@ -47,3 +35,27 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss">
+.content {
+  @apply pt-8;
+}
+
+.nuxt-content {
+  @apply my-16;
+}
+
+.prose {
+  @apply text-xl;
+
+  & .title {
+    @apply m-0;
+    @apply text-4xl font-bold;
+  }
+
+  & .date {
+    @apply m-0;
+    @apply text-3xl text-gray-500;
+  }
+}
+</style>
